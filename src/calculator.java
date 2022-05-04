@@ -15,14 +15,21 @@ public class calculator {
         System.out.println("(+) addition / (-) subtraction / (*) multiplication / (/) division");
         String choice = scanner.nextLine();
 
-        if (choice.equals("+")){
-            System.out.println(x+y);
-        } else if (choice.equals("-")){
-            System.out.println(x-y);
-        } else if (choice.equals("*")){
-            System.out.println(x*y);
-        } else if (choice.equals("/")){
-            System.out.println(x/y);
+        switch (choice) {
+            case "+":
+                System.out.println(x+y);
+                 break;
+            case "-":
+                System.out.println(x-y);
+                break;
+            case "*":
+                System.out.println(x*y);
+                break;
+            case "/":
+                System.out.println(x/y);
+                break;
+            default:
+                System.out.println("Sorry, incorrect symbol.");
 
         }
     }
